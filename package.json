@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/Davidcastel26/firebase_first_app/issues"
   },
-  "homepage": "https://github.com/Davidcastel26/firebase_first_app#readme",
-  "dependencies": {
-    "firebase": "^9.4.1"
-  }
+  "homepage": "https://github.com/Davidcastel26/firebase_first_app#readme"
 }

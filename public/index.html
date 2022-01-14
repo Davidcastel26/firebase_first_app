@@ -8,54 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="app">
-        <button id="btn_login">Login with Google</button>
-        <button id="btn_logout" class="hidden">Logout</button>
-
-        <from id="todo-form">
-            <div id="user-info"></div>
-            <input type="text" placeholder="New ToDo ..." autocomplete="off" id="todo-input">
-        </from>
-        <div id="todos-container"></div>
-    </div>
-    <script>
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "firebase/app";
-        import { getAnalytics } from "firebase/analytics";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-        import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-        import { GoogleAuthProvider } from "firebase/auth";
-
-        const provider = new GoogleAuthProvider();
-        const auth = getAuth();
-        //---------------------------------------------------------
-
-        import { getFirestore } from "firebase/firestore"
-        const firebaseApp = initializeApp({
-            apiKey: "AIzaSyBxfxfwuTIYVnCUCvYnoa7uOnPCXXniJmw",
-            authDomain: "todo-df393.firebaseapp.com",
-            projectId: "todo-df393",
-        });
-
-        const db = getFirestore();
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBxfxfwuTIYVnCUCvYnoa7uOnPCXXniJmw",
-          authDomain: "todo-df393.firebaseapp.com",
-          projectId: "todo-df393",
-          storageBucket: "todo-df393.appspot.com",
-          messagingSenderId: "590665673893",
-          appId: "1:590665673893:web:7d4125c62fcdee7d95f14c",
-          measurementId: "G-STC4RT2M0Y"
-};
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
+   
 
     <script src="../app/dist/index.js" type="module"></script>
 </body>
