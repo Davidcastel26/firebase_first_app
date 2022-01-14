@@ -16,7 +16,7 @@
   \***************************/
 /***/ (() => {
 
-eval("\nlet wave = 'Hello there!';\nconsole.log(wave);\n\n\n//# sourceURL=webpack://fire_base_app/./app/dist/index.js?");
+eval("\nconst firebaseConfig = {\n    apiKey: \"AIzaSyDzh1AFlBV_Mc0wOHKhmk-yhYmoywrG_-A\",\n    authDomain: \"fir-9-dojo-4f821.firebaseapp.com\",\n    projectId: \"fir-9-dojo-4f821\",\n    storageBucket: \"fir-9-dojo-4f821.appspot.com\",\n    messagingSenderId: \"31769837180\",\n    appId: \"1:31769837180:web:25205a91ae5235a877d3f9\"\n};\n\n\n//# sourceURL=webpack://fire_base_app/./app/dist/index.js?");
 
 /***/ })
 
