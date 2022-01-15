@@ -9,4 +9,8 @@ const firebaseConfig = {
     messagingSenderId: "31769837180",
     appId: "1:31769837180:web:25205a91ae5235a877d3f9"
 };
+//init firebase app
 (0, app_1.initializeApp)(firebaseConfig);
+//init services
+//colletino ref
+//get collection data
