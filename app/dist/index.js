@@ -16,4 +16,6 @@ const firebaseConfig = {
 //init services
 const db = (0, firestore_1.getFirestore)();
 //colletino ref
+// check the db since books is part of one collection(table) into the db
+const colRef = (0, firestore_1.collection)(db, 'books');
 //get collection data

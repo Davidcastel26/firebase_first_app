@@ -1,10 +1,20 @@
 import { initializeApp } from 'firebase/app'
 //importing db so we need a func from fibestore part from the firebase libery
 import {
-        getFirestore
+        getFirestore,
+        collection
         } from 'firebase/firestore'
 
-const firebaseConfig = {
+interface fbConfigInterface {
+    apiKey: string,
+    authDomain: string,
+    projectId: string,
+    storageBucket: string,
+    messagingSenderId: string,
+    appId: string,
+}
+
+const firebaseConfig : fbConfigInterface = {
     apiKey: "AIzaSyDzh1AFlBV_Mc0wOHKhmk-yhYmoywrG_-A",
     authDomain: "fir-9-dojo-4f821.firebaseapp.com",
     projectId: "fir-9-dojo-4f821",
@@ -20,4 +30,6 @@ initializeApp(firebaseConfig)
 const db = getFirestore()
 
 //colletino ref
+// check the db since books is part of one collection(table) into the db
+const colRef = collection(db, 'books')
 //get collection data
