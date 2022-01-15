@@ -1,4 +1,8 @@
 import { initializeApp } from 'firebase/app'
+//importing db so we need a func from fibestore part from the firebase libery
+import {
+        getFirestore
+        } from 'firebase/firestore'
 
 const firebaseConfig = {
     apiKey: "AIzaSyDzh1AFlBV_Mc0wOHKhmk-yhYmoywrG_-A",
@@ -11,6 +15,9 @@ const firebaseConfig = {
 
 //init firebase app
 initializeApp(firebaseConfig)
+
 //init services
+const db = getFirestore()
+
 //colletino ref
 //get collection data
